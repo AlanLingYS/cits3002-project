@@ -6,6 +6,7 @@
 # print start/end logs
 
 import sys
+from device import NetworkSimulator
 
 def parse_message_size(argv):
 #validate the required message-size argument
@@ -22,3 +23,17 @@ def parse_message_size(argv):
         raise ValueError("message_size_bytes must be non-negative")
 
     return message_size
+
+def main(argv=None):
+    """Run the fixed Host A to Host B simulation."""
+
+    args = sys.argv if argv is None else argv
+    try:
+        message_size = parse_message_size(args)
+    except ValueError as exc:
+        print(exc)
+        return 1
+
+    simulator = NetworkSimulator()
+    simulator.send_from_a_to_b(message_size)
+    return 0
