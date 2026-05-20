@@ -78,3 +78,14 @@ class DataLinkLayer:
 
 
 class NetworkLayer:
+
+class TransportLayer:
+
+class device:
+
+class Host(device):
+
+
+class Router(device):
+
+

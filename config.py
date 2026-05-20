@@ -53,3 +53,5 @@ ROUTER_ROUTING_TABLE = {
     HOST_A_IP: (HOST_A_IP, "if1"),
     HOST_B_IP: (HOST_B_IP, "if2"),
 }
+
+# I think thats all we need, if we need extra we can add it next time
