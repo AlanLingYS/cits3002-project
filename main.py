@@ -37,3 +37,6 @@ def main(argv=None):
     simulator = NetworkSimulator()
     simulator.send_from_a_to_b(message_size)
     return 0
+
+if __name__ == "__main__":
+    sys.exit(main())
