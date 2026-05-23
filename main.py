@@ -6,7 +6,7 @@
 # print start/end logs
 
 import sys
-from device import NetworkSimulator
+from devices import NetworkSimulator
 
 def parse_message_size(argv):
 #validate the required message-size argument

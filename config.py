@@ -56,5 +56,3 @@ ROUTER_MAC_TABLE = {
     HOST_A_IP: HOST_A_MAC,
     HOST_B_IP: HOST_B_MAC,
 }
-
-# I think thats all we need, if we need extra we can add it next time

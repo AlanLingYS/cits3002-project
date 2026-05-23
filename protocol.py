@@ -77,7 +77,7 @@ class Layer3Packet:
     payload: Layer4Segment
 
     def total_length(self) -> int:
-        """Return total packet length: 8-byte IP-like header + Layer 4 segment size."""
+        """Return total packet length: 12-byte IP-like header + Layer 4 segment size."""
         return 12 + self.payload.length()
 
     def decrement_ttl(self) -> None:
